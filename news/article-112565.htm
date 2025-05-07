@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html xml:lang="zh-CN" lang="zh-CN">
+
+<head>
+        <link rel="canonical" href="https://vpnmac.github.io/news/article-112565.htm" />
+    <meta charset="utf-8">
+    <title>深入掌握 v2rayNG：从下载安装到高级配置的完整使用指南</title>
+        <meta name="description" content="在全球网络环境愈发复杂的背景下，科学上网工具已成为数百万用户获取信息自由、保护网络隐私的首选。而在众多工具中，v2rayNG 凭借其开源、灵活、高度可配置的特性，成为 Android 平台上最受欢迎的" />
+        <link rel="icon" href="/assets/website/img/clashvergegithub/favicon.ico" type="image/x-icon"/>
+
+    <meta name="author" content="VPN Mac 中文网">
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://vpnmac.github.io/news/article-112565.htm" />
+    <meta property="og:site_name" content="VPN Mac 中文网" />
+    <meta property="og:title" content="深入掌握 v2rayNG：从下载安装到高级配置的完整使用指南" />
+    <meta property="og:image" content="https://vpnmac.github.io/uploads/20240909/dfc0f6b15ec5840e7848c94f23a6488f.webp" />
+        <meta property="og:release_date" content="2025-05-07T08:53:36" />
+    <meta property="og:updated_time" content="2025-05-07T08:53:36" />
+        <meta property="og:description" content="在全球网络环境愈发复杂的背景下，科学上网工具已成为数百万用户获取信息自由、保护网络隐私的首选。而在众多工具中，v2rayNG 凭借其开源、灵活、高度可配置的特性，成为 Android 平台上最受欢迎的" />
+        
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Pe-7 icon -->
+    <link href="/assets/website/css/clashvergegithub/pe-icon-7.css" rel="stylesheet" type="text/css">
+    <!--Slider-->
+    <link rel="stylesheet" href="/assets/website/css/clashvergegithub/owl.carousel.min.css">
+    <link rel="stylesheet" href="/assets/website/css/clashvergegithub/owl.theme.default.min.css">
+    <!-- css -->
+    <link href="/assets/website/css/clashvergegithub/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="/assets/website/css/clashvergegithub/style.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/assets/website/css/G.css" />
+
+    <meta name="applicable-device" content="pc,mobile" />
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta name="robots" content="max-image-preview:large" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="深入掌握 v2rayNG：从下载安装到高级配置的完整使用指南">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="dns-prefetch" href="https:/www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.googleadservices.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+    <link rel="dns-prefetch" href="https://cm.g.doubleclick.net">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WEME3EYWJQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WEME3EYWJQ');
+</script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3332997411212854"
+     crossorigin="anonymous"></script>
+</head>
+
+<body data-page="detail">
+        <!-- Loader -->
+    <div id="preloader">
+        <div id="status">
+            <div class="spinner">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+        </div>
+    </div>
+    <!--Navbar Start-->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-custom sticky sticky-dark align-items-center">
+        <div class="container">
+            <!-- LOGO -->
+            <a class="logo mr-3" href="/">
+                            <span>VPN Mac</span>
+                        </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="" data-feather="menu"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav">
+                                        <li class="nav-item">
+                        <a href="/" class="nav-link">首页</a>
+                    </li>
+                                        <li class="nav-item">
+                        <a href="/paid-subscribe/" class="nav-link">推荐机场</a>
+                    </li>
+                                        <li class="nav-item">
+                        <a href="/news/" class="nav-link">新闻资讯</a>
+                    </li>
+                                        <li class="nav-item">
+                        <a href="/client.htm" class="nav-link">客户端</a>
+                    </li>
+                                    </ul>
+                
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+    <!-- Hero Start -->
+    <section class="hero-5-bg position-relative bg-light" id="home" style="height:500px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div style="margin-top: 4rem;">
+                        <h1 class="hero-5-title line-height-1_4 mb-4">深入掌握 v2rayNG：从下载安装到高级配置的完整使用指南</h1>
+                        <p class="text-muted mb-4 pb-3">
+                            <a href="/">首页</a> / <a href="/news/">新闻资讯</a> / 正文
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="/assets/website/img/clashvergegithub/hero-5-img.png" alt="Clash Verge Github hero" class="hero-5-img">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero End -->
+    <!-- Features Start -->
+    <section class="section" id="features">
+        <div class="container">
+            <div class="features-content">
+                <div class="row">
+                    <div class="col-md-9">
+                                        <input type="hidden" id="share-website-info" data-name="Clash Node官网订阅站" data-url="https://clashnode.github.io">
+                <div class="xcblog-blog-detail xcblog-blog-detail-defined">
+                    
+<p data-start="36" data-end="150" class="">在全球网络环境愈发复杂的背景下，科学上网工具已成为数百万用户获取信息自由、保护网络隐私的首选。而在众多工具中，<strong data-start="91" data-end="102">v2rayNG</strong> 凭借其开源、灵活、高度可配置的特性，成为 Android 平台上最受欢迎的科学上网客户端之一。</p>
+<p data-start="152" data-end="236" class="">这款基于 V2Ray 核心的应用，不仅继承了 V2Ray 强大的多协议支持与加密传输能力，还通过极简直观的操作界面，降低了使用门槛，让更多普通用户也能轻松畅游网络世界。</p>
+<p data-start="238" data-end="342" class="">本篇文章将全面深入地介绍 v2rayNG 的项目背景、官方网址、功能特点、下载安装方式、配置教程以及常见问题解决方案。无论你是入门用户还是资深网络玩家，都能在本文中找到高效使用 v2rayNG 的方法与技巧。</p>
+<hr data-start="344" data-end="347" class="" style="">
+<h2 data-start="349" data-end="366" class="">一、v2rayNG 项目简介</h2>
+<p data-start="368" data-end="486" class="">v2rayNG 是一款运行在 Android 系统上的 V2Ray 客户端，它作为 V2Ray 项目的衍生工具，使得用户可以在手机上直接配置并连接代理节点，实现科学上网功能。其核心源于 V2Ray 项目，但在移动端的呈现方式上更为友好。</p>
+<p data-start="488" data-end="586" class="">V2Ray 本身是一个模块化的网络代理软件框架，支持多种协议如 VMess、VLESS、Shadowsocks、SOCKS5 等，并拥有复杂的流量伪装与混淆能力，适用于绕过网络封锁和保护网络通信。</p>
+<p data-start="588" data-end="641" class="">而 v2rayNG 正是将这套能力带入 Android 手机端，让你在手机上也能安全、自由地连接外部网络。</p>
+<hr data-start="643" data-end="646" class="" style="">
+<h2 data-start="648" data-end="668" class="">二、v2rayNG 项目的官方网址</h2>
+<p data-start="670" data-end="707" class="">v2rayNG 项目的官方维护平台为 <strong data-start="689" data-end="699">GitHub</strong>，链接地址如下：</p>
+<p data-start="709" data-end="755" class=""><strong data-start="709" data-end="722">GitHub 页面</strong>：<a data-start="723" data-end="755" rel="noopener" target="_new" class="" href="https://github.com/2dust/v2rayNG">https://github.com/2dust/v2rayNG</a></p>
+<p data-start="757" data-end="768" class="">在这个页面中，你可以：</p>
+<ul data-start="770" data-end="860">
+<li data-start="770" data-end="787" class="" style="">
+<p data-start="772" data-end="787" class="">下载最新版本的 APK 安装包</p>
+</li>
+<li data-start="788" data-end="814" class="" style="">
+<p data-start="790" data-end="814" class="">查阅项目的更新日志（Release Notes）</p>
+</li>
+<li data-start="815" data-end="827" class="" style="">
+<p data-start="817" data-end="827" class="">获取源码与开发者说明</p>
+</li>
+<li data-start="828" data-end="844" class="">
+<p data-start="830" data-end="844" class="">提交 Bug 或查看社区讨论</p>
+</li>
+<li data-start="845" data-end="860" class="">
+<p data-start="847" data-end="860" class="">获取问题反馈与功能建议渠道</p>
+</li>
+</ul>
+<p data-start="862" data-end="896" class="">建议用户从该页面下载或更新 v2rayNG，确保来源安全、版本可靠。</p>
+<hr data-start="898" data-end="901" class="">
+<h2 data-start="903" data-end="921" class="">三、v2rayNG 的主要特点</h2>
+<h3 data-start="923" data-end="937" class="">1. 多协议支持</h3>
+<p data-start="938" data-end="966" class="">v2rayNG 支持 V2Ray 所有的主流协议，包括：</p>
+<ul data-start="967" data-end="1040">
+<li data-start="967" data-end="978" class="">
+<p data-start="969" data-end="978" class=""><strong data-start="969" data-end="978">VMess</strong></p>
+</li>
+<li data-start="979" data-end="990" class="">
+<p data-start="981" data-end="990" class=""><strong data-start="981" data-end="990">VLESS</strong></p>
+</li>
+<li data-start="991" data-end="1008" class="">
+<p data-start="993" data-end="1008" class=""><strong data-start="993" data-end="1008">Shadowsocks</strong></p>
+</li>
+<li data-start="1009" data-end="1020" class="">
+<p data-start="1011" data-end="1020" class=""><strong data-start="1011" data-end="1020">SOCKS</strong></p>
+</li>
+<li data-start="1021" data-end="1040" class="">
+<p data-start="1023" data-end="1040" class=""><strong data-start="1023" data-end="1033">Trojan</strong>（需插件支持）</p>
+</li>
+</ul>
+<p data-start="1042" data-end="1085" class="">这意味着无论你的服务商使用什么类型的协议，你几乎都可以通过 v2rayNG 进行连接。</p>
+<h3 data-start="1087" data-end="1103" class="">2. 简洁的用户界面</h3>
+<p data-start="1104" data-end="1183" class="">v2rayNG 保持了 Material Design 风格，清爽、直观，不冗余。功能模块布局合理，操作逻辑清晰，用户只需简单几步就可以建立起稳定的代理连接。</p>
+<h3 data-start="1185" data-end="1200" class="">3. 一键导入配置</h3>
+<p data-start="1201" data-end="1232" class="">支持扫描二维码或粘贴链接导入配置，免去手动填写每项参数的繁琐。</p>
+<h3 data-start="1234" data-end="1251" class="">4. 可订阅式配置更新</h3>
+<p data-start="1252" data-end="1291" class="">通过订阅地址自动获取服务器列表，并支持定时或手动更新，特别适合多个节点的用户。</p>
+<h3 data-start="1293" data-end="1308" class="">5. 高度可定制性</h3>
+<p data-start="1309" data-end="1373" class="">v2rayNG 提供多种代理模式（全局代理、绕过局域网、本地规则等），并支持路由配置、DNS设置、流量统计、日志查看等进阶操作。</p>
+<hr data-start="1375" data-end="1378" class="">
+<h2 data-start="1380" data-end="1408" class="">四、如何下载安装 v2rayNG（Android）</h2>
+<h3 data-start="1410" data-end="1435" class="">步骤 1：前往 GitHub 官方页面</h3>
+<p data-start="1436" data-end="1507" class="">访问：<a data-start="1439" data-end="1507" class="" rel="noopener" target="_new" href="https://github.com/2dust/v2rayNG">https://github.com/2dust/v2rayNG</a></p>
+<p data-start="1509" data-end="1550" class="">在 Releases 页面中选择最新版本，下载后缀为 <code data-start="1536" data-end="1542">.apk</code> 的安装包文件。</p>
+<h3 data-start="1552" data-end="1573" class="">步骤 2：开启未知来源安装权限</h3>
+<ul data-start="1574" data-end="1647">
+<li data-start="1574" data-end="1610" class="">
+<p data-start="1576" data-end="1610" class="">打开 Android 设置 &gt; 安全 &gt; 允许安装未知来源应用。</p>
+</li>
+<li data-start="1611" data-end="1647" class="">
+<p data-start="1613" data-end="1647" class="">在 Android 10 以上版本中，系统会在安装时自动提示你授权。</p>
+</li>
+</ul>
+<h3 data-start="1649" data-end="1666" class="">步骤 3：安装 APK</h3>
+<p data-start="1667" data-end="1699" class="">点击下载好的 APK 文件，系统将提示你安装。根据提示完成安装。</p>
+<hr data-start="1701" data-end="1704" class="">
+<h2 data-start="1706" data-end="1727" class="">五、如何配置 v2rayNG 客户端</h2>
+<h3 data-start="1729" data-end="1751" class="">5.1 添加单个节点（手动配置）</h3>
+<ol data-start="1752" data-end="1983">
+<li data-start="1752" data-end="1770" class="">
+<p data-start="1755" data-end="1770" class="">打开 v2rayNG 应用</p>
+</li>
+<li data-start="1771" data-end="1797" class="">
+<p data-start="1774" data-end="1797" class="">点击右上角 “+” 图标，选择“手动输入”</p>
+</li>
+<li data-start="1798" data-end="1959" class="">
+<p data-start="1801" data-end="1810" class="">填写以下基本信息：</p>
+<ul data-start="1814" data-end="1959">
+<li data-start="1814" data-end="1825" class="">
+<p data-start="1816" data-end="1825" class=""><strong data-start="1816" data-end="1825">服务器地址</strong></p>
+</li>
+<li data-start="1829" data-end="1837" class="">
+<p data-start="1831" data-end="1837" class=""><strong data-start="1831" data-end="1837">端口</strong></p>
+</li>
+<li data-start="1841" data-end="1856" class="">
+<p data-start="1843" data-end="1856" class=""><strong data-start="1843" data-end="1856">UUID / 密码</strong></p>
+</li>
+<li data-start="1860" data-end="1902" class="">
+<p data-start="1862" data-end="1902" class=""><strong data-start="1862" data-end="1902">加密方式（aes-128-gcm、chacha20-poly1305等）</strong></p>
+</li>
+<li data-start="1906" data-end="1929" class="">
+<p data-start="1908" data-end="1929" class=""><strong data-start="1908" data-end="1929">传输方式（tcp、ws、grpc）</strong></p>
+</li>
+<li data-start="1933" data-end="1959" class="">
+<p data-start="1935" data-end="1959" class=""><strong data-start="1935" data-end="1959">额外信息（host、path、tls等）</strong></p>
+</li>
+</ul>
+</li>
+<li data-start="1960" data-end="1983" class="">
+<p data-start="1963" data-end="1983" class="">点击保存，返回主页选择该节点，点击连接。</p>
+</li>
+</ol>
+<h3 data-start="1985" data-end="2005" class="">5.2 添加订阅地址（推荐）</h3>
+<ol data-start="2006" data-end="2139">
+<li data-start="2006" data-end="2051" class="">
+<p data-start="2009" data-end="2051" class="">获取服务商提供的 V2Ray 订阅链接（一般以 <code data-start="2033" data-end="2045">http(s)://</code> 开头）</p>
+</li>
+<li data-start="2052" data-end="2087" class="">
+<p data-start="2055" data-end="2087" class="">在 v2rayNG 首页点击右上角“三点”图标 &gt; 订阅设置</p>
+</li>
+<li data-start="2088" data-end="2116" class="">
+<p data-start="2091" data-end="2116" class="">添加订阅链接，点击“更新订阅”，节点将自动导入</p>
+</li>
+<li data-start="2117" data-end="2139" class="">
+<p data-start="2120" data-end="2139" class="">在节点列表中选择你需要连接的服务器即可</p>
+</li>
+</ol>
+<hr data-start="2141" data-end="2144" class="">
+<h2 data-start="2146" data-end="2164" class="">六、常见使用问题解答（FAQ）</h2>
+<h3 data-start="2166" data-end="2186" class="">Q1：为什么连接不上服务器？</h3>
+<p data-start="2187" data-end="2194" class="">可能原因包括：</p>
+<ul data-start="2195" data-end="2256">
+<li data-start="2195" data-end="2215" class="">
+<p data-start="2197" data-end="2215" class="">节点信息输入有误（端口、UUID等）</p>
+</li>
+<li data-start="2216" data-end="2227" class="">
+<p data-start="2218" data-end="2227" class="">服务器已过期或被墙</p>
+</li>
+<li data-start="2228" data-end="2238" class="">
+<p data-start="2230" data-end="2238" class="">DNS 设置错误</p>
+</li>
+<li data-start="2239" data-end="2256" class="">
+<p data-start="2241" data-end="2256" class="">网络本地不稳定或禁用了外部连接</p>
+</li>
+</ul>
+<p data-start="2258" data-end="2261" class="">建议：</p>
+<ul data-start="2262" data-end="2301">
+<li data-start="2262" data-end="2273" class="">
+<p data-start="2264" data-end="2273" class="">重新检查服务器配置</p>
+</li>
+<li data-start="2274" data-end="2283" class="">
+<p data-start="2276" data-end="2283" class="">更换服务器节点</p>
+</li>
+<li data-start="2284" data-end="2301" class="">
+<p data-start="2286" data-end="2301" class="">打开软件的日志功能查看报错信息</p>
+</li>
+</ul>
+<h3 data-start="2303" data-end="2325" class="">Q2：v2rayNG 是否安全？</h3>
+<p data-start="2326" data-end="2408" class="">v2rayNG 本身不开源，但其依赖的 V2Ray 核心为开源项目，具备成熟的加密机制。如果你使用来自可信服务商的节点，并从官方渠道下载安装，基本可以确保连接安全。</p>
+<p data-start="2410" data-end="2413" class="">建议：</p>
+<ul data-start="2414" data-end="2472">
+<li data-start="2414" data-end="2429" class="">
+<p data-start="2416" data-end="2429" class="">不要使用来历不明的免费节点</p>
+</li>
+<li data-start="2430" data-end="2440" class="">
+<p data-start="2432" data-end="2440" class="">及时更新应用版本</p>
+</li>
+<li data-start="2441" data-end="2472" class="">
+<p data-start="2443" data-end="2472" class="">不要频繁切换国外IP访问涉及账户登录的网站（如贴吧、微信）</p>
+</li>
+</ul>
+<h3 data-start="2474" data-end="2496" class="">Q3：如何更新 v2rayNG？</h3>
+<ul data-start="2497" data-end="2554">
+<li data-start="2497" data-end="2523" class="">
+<p data-start="2499" data-end="2523" class="">定期访问 GitHub 页面查看版本更新说明</p>
+</li>
+<li data-start="2524" data-end="2554" class="">
+<p data-start="2526" data-end="2554" class="">下载新版本 APK 文件，覆盖安装旧版本即可（无需卸载）</p>
+</li>
+</ul>
+<hr data-start="2556" data-end="2559" class="">
+<h2 data-start="2561" data-end="2589" class="">七、使用 v2rayNG 提升科学上网体验的小技巧</h2>
+<ol data-start="2591" data-end="2835">
+<li data-start="2591" data-end="2642" class="">
+<p data-start="2594" data-end="2642" class=""><strong data-start="2594" data-end="2607">使用分应用代理功能</strong>：可实现仅指定 App（如浏览器、Telegram）走代理，节省带宽。</p>
+</li>
+<li data-start="2643" data-end="2706" class="">
+<p data-start="2646" data-end="2706" class=""><strong data-start="2646" data-end="2661">开启远程 DNS 配置</strong>：避免本地 DNS 污染，可设置为 8.8.8.8 或 Cloudflare 的 DNS。</p>
+</li>
+<li data-start="2707" data-end="2749" class="">
+<p data-start="2710" data-end="2749" class=""><strong data-start="2710" data-end="2721">路由策略自定义</strong>：精细控制流量走向，比如国内流量走直连，国际流量走代理。</p>
+</li>
+<li data-start="2750" data-end="2801" class="">
+<p data-start="2753" data-end="2801" class=""><strong data-start="2753" data-end="2779">结合 Clash、PassWall 配置导入</strong>：通过导出配置文件，可实现跨客户端同步使用。</p>
+</li>
+<li data-start="2802" data-end="2835" class="">
+<p data-start="2805" data-end="2835" class=""><strong data-start="2805" data-end="2822">设置日志等级为 Debug</strong>：排查连接问题时特别有效。</p>
+</li>
+</ol>
+<hr data-start="2837" data-end="2840" class="">
+<h2 data-start="2842" data-end="2852" class="">八、结语与点评</h2>
+<p data-start="2854" data-end="2975" class="">v2rayNG 并不仅仅是一款 Android 科学上网应用，更是一件网络自由的工具武器。在合理合法使用的前提下，它帮助我们打破信息壁垒、提高网络连接质量、保护数据隐私，也为那些需要稳定访问国外内容、从事远程工作或研究的用户提供了极大的便利。</p>
+<p data-start="2977" data-end="3074" class="">本文通过详尽的步骤说明与功能解析，不仅为初学者扫清了入门障碍，也为进阶用户提供了参考和进化空间。从安装到订阅、从协议选择到路由优化，v2rayNG 所体现的，是一个工具对复杂网络环境的优雅回应。</p>
+<p data-start="3076" data-end="3221" class=""><strong data-start="3076" data-end="3082">点评</strong>：<br data-start="3083" data-end="3086">
+这篇文章条理清晰、结构完备，既体现了对技术的理解，又注重操作细节的用户友好性。在面对工具类话题时，作者没有流于术语堆砌，而是以引导性语言构建出一座“从小白到高手”的桥梁。特别是“使用技巧”与“常见问题”的部分，使得内容实用性大大增强。堪称一份真正具有实战价值的使用指南。</p>
+<p data-start="3223" data-end="3260" class="">是否需要我进一步为你整理《v2rayNG 与其他安卓科学上网工具对比表》？</p>                </div>
+                <div class="clearfix"></div>
+                <div class="col-md-12 mt-5">
+                                        <p>上一个：<a href="/news/article-112564.htm">梅林科学上网负载均衡：深入分析与设置指南</a></p>
+                                    </div>
+                                    </div>
+                    <div class="col-md-3">
+                        <div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">热门文章</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2"><a href="/news/article-106004.htm" title="SSRR与Shadowrocket终极指南：从原理到实践的科学上网艺术">SSRR与Shadowrocket终极指南：从原理到实践的科学上网艺术</a></li>
+                        <li class="py-2"><a href="/news/article-112223.htm" title="2018科学上网完全指南：翻越网络高墙的实用策略与工具选择">2018科学上网完全指南：翻越网络高墙的实用策略与工具选择</a></li>
+                        <li class="py-2"><a href="/news/article-96102.htm" title="如何在iPhone上安装与配置Shadowrocket：完整指南">如何在iPhone上安装与配置Shadowrocket：完整指南</a></li>
+                        <li class="py-2"><a href="/news/article-91569.htm" title="V2Ray账号共享全解析：能否多人使用？风险、配置与实战指南">V2Ray账号共享全解析：能否多人使用？风险、配置与实战指南</a></li>
+                        <li class="py-2"><a href="/news/article-99768.htm" title="一元Clash机场全攻略：小成本也能体验高速翻墙的秘密武器">一元Clash机场全攻略：小成本也能体验高速翻墙的秘密武器</a></li>
+                        <li class="py-2"><a href="/news/article-106912.htm" title="完整指南：如何使用v2ray挖矿一键脚本进行高效挖矿">完整指南：如何使用v2ray挖矿一键脚本进行高效挖矿</a></li>
+                        <li class="py-2"><a href="/news/article-95354.htm" title="奶昔机场Clash订阅终极指南：从入门到进阶的翻墙实战手册">奶昔机场Clash订阅终极指南：从入门到进阶的翻墙实战手册</a></li>
+                        <li class="py-2"><a href="/news/article-110203.htm" title="深入解析：如何在Shadowrocket中设置混淆以提升网络安全性">深入解析：如何在Shadowrocket中设置混淆以提升网络安全性</a></li>
+                        <li class="py-2"><a href="/news/article-104363.htm" title="如何在iPad国行设备上实现科学上网：全面指南与解决方案">如何在iPad国行设备上实现科学上网：全面指南与解决方案</a></li>
+                        <li class="py-2"><a href="/news/article-112224.htm" title="解锁高速稳定的科学上网体验：V2ray客户端多服务器均衡配置全指南">解锁高速稳定的科学上网体验：V2ray客户端多服务器均衡配置全指南</a></li>
+                    </ul>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">归纳</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">14</span> <a href="/date/2025-05/" title="2025-05 归档">2025-05</a></h4>
+            </li>
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">46</span> <a href="/date/2025-04/" title="2025-04 归档">2025-04</a></h4>
+            </li>
+                    </ul>
+    </div>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Features End -->
+        <!-- Footer Start -->
+    <section class="footer" style="background-image: url(/assets/website/img/clashvergegithub/hero-1-bg-img.png)">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="text-center">
+                        <p class="text-white-50 f-15 mb-0">
+                                                <p>
+                                                <a href="/">首页</a> |
+                                                <a href="/paid-subscribe/">推荐机场</a> |
+                                                <a href="/news/">新闻资讯</a> |
+                                                <a href="/client.htm">客户端</a> |
+                                                <a href="/about-us.htm">关于我们</a> |
+                        <a href="/disclaimer.htm">免责申明</a> |
+                        <a href="/privacy.htm">隐私申明</a> |
+                        <a href="/sitemap.xml">网站地图</a>
+                    </p>
+                            <a href="/">VPN Mac 中文网</a> 版权所有 Powered by WordPress
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer End -->
+    <!-- javascript -->
+    <script src="/assets/website/js/frontend/clashvergegithub/jquery.min.js"></script>
+    <script src="/assets/website/js/frontend/clashvergegithub/bootstrap.bundle.min.js"></script>
+    <script src="/assets/website/js/frontend/clashvergegithub/jquery.easing.min.js"></script>
+    <!-- feather icons -->
+    <script src="/assets/website/js/frontend/clashvergegithub/feather-icons.js"></script>
+    <!-- carousel -->
+    <script src="/assets/website/js/frontend/clashvergegithub/owl.carousel.min.js"></script>
+    <!-- Main Js -->
+    <script src="/assets/website/js/frontend/clashvergegithub/app.js"></script>
+    <script src="https://www.freeclashnode.com/assets/js/frontend/invite-url.js"></script><script src="/assets/website/js/frontend/G.js"></script>
+</body>
+
+</html>
