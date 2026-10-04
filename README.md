@@ -1,4 +1,4 @@
-# VPN Mac | 9月27日18.2M/S|免费V2ray节点/SSR节点/Clash节点/Singbox节点/Shadowrocket节点订阅节点  更新时间 2026-09-27 09:15:05
+# VPN Mac | 10月4日18.3M/S|免费SSR节点/Clash节点/Shadowrocket节点/Singbox节点/V2ray节点订阅节点  更新时间 2026-10-04 10:37:18
 所有免费clash节点都爬取自网络，请勿用于非法用途 。节点地址：<a href="https://vpnmac.github.io" target="_blank">点击跳转</a>
 
 ## clash使用教程：
@@ -9,23 +9,23 @@
 
 ### 免费Clash节点订阅链接
 
-- https://vpnmac.github.io/uploads/2026/09/0-20260927.yaml
-- https://vpnmac.github.io/uploads/2026/09/1-20260927.yaml
-- https://vpnmac.github.io/uploads/2026/09/2-20260927.yaml
-- https://vpnmac.github.io/uploads/2026/09/3-20260927.yaml
-- https://vpnmac.github.io/uploads/2026/09/4-20260927.yaml
+- https://vpnmac.github.io/uploads/2026/10/0-20261004.yaml
+- https://vpnmac.github.io/uploads/2026/10/1-20261004.yaml
+- https://vpnmac.github.io/uploads/2026/10/2-20261004.yaml
+- https://vpnmac.github.io/uploads/2026/10/3-20261004.yaml
+- https://vpnmac.github.io/uploads/2026/10/4-20261004.yaml
 
 ### 免费V2ray节点订阅链接
 
-- https://vpnmac.github.io/uploads/2026/09/0-20260927.txt
-- https://vpnmac.github.io/uploads/2026/09/1-20260927.txt
-- https://vpnmac.github.io/uploads/2026/09/2-20260927.txt
-- https://vpnmac.github.io/uploads/2026/09/3-20260927.txt
-- https://vpnmac.github.io/uploads/2026/09/4-20260927.txt
+- https://vpnmac.github.io/uploads/2026/10/0-20261004.txt
+- https://vpnmac.github.io/uploads/2026/10/1-20261004.txt
+- https://vpnmac.github.io/uploads/2026/10/2-20261004.txt
+- https://vpnmac.github.io/uploads/2026/10/3-20261004.txt
+- https://vpnmac.github.io/uploads/2026/10/4-20261004.txt
 
 ### 免费Sing-box节点订阅链接
 
-- https://vpnmac.github.io/uploads/2026/09/20260927.json
+- https://vpnmac.github.io/uploads/2026/10/20261004.json
 
 ## 更多Clash节点订阅 ：
 
